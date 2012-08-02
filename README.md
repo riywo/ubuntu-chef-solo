@@ -3,7 +3,7 @@ ubuntu-chef-solo
 
 Bootstrap Ubuntu Desktop.
 
-Run install.sh on fresh system as root to make sure,
+Run bootstrap.sh on fresh system as root to make sure,
 that system is upgraded and chef-solo is installed.
 
 Copypasted from
