@@ -15,3 +15,5 @@ if ! test -f "$chef_binary"; then
     apt-get install -y ruby1.9.1 ruby1.9.1-dev make &&
     sudo gem1.9.1 install --no-rdoc --no-ri chef --version 0.10.0
 fi
+
+"$chef_binary" -c solo.rb -j solo.json
