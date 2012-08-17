@@ -1,1 +1,1 @@
-{ "run_list": [ "recipe[ubuntu::default]" ] }
+{ "run_list": [ "recipe[ubuntu::default]", "recipe[virtualbox::default]" ] }
