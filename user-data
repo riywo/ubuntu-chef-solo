@@ -1,0 +1,2 @@
+#!/bin/sh
+wget -nv -O - https://github.com/riywo/ubuntu-chef-solo/raw/master/install.sh | sh
