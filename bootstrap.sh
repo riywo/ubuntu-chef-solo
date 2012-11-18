@@ -2,10 +2,7 @@
 
 # This runs as root
 
-chef_binary=/usr/local/bin/chef-solo
-
-# Are we on a vanilla system?
-if ! test -f "$chef_binary"; then
+if ! [ "chef-solo -v > /dev/null" ]; then
     export DEBIAN_FRONTEND=noninteractive
     # Upgrade headlessly (this is only safe-ish on vanilla systems)
     apt-get update &&
@@ -15,5 +12,3 @@ if ! test -f "$chef_binary"; then
     apt-get install -y ruby1.9.1 ruby1.9.1-dev make &&
     sudo gem1.9.1 install --no-rdoc --no-ri chef --version 0.10.0
 fi
-
-"$chef_binary" -c solo.rb -j solo.json

@@ -1,9 +1,8 @@
 #!/bin/sh
-set -e
-sudo rm -rf ~/chef
-mkdir ~/chef
-cd ~/chef
-wget -nv -O - https://github.com/ciastek/ubuntu-chef-solo/tarball/master | tar xz
+sudo rm -rf ~/.ubuntu-chef-solo
+mkdir ~/.ubuntu-chef-solo
+cd ~/.ubuntu-chef-solo
+wget -nv -O - https://github.com/riywo/ubuntu-chef-solo/tarball/master | tar xz
 balldir=`ls`
 mv $balldir/* .
 rmdir $balldir

@@ -3,7 +3,7 @@ ubuntu-chef-solo
 
 Bootstrap Ubuntu Desktop.
 
-    wget -nv -O - https://github.com/ciastek/ubuntu-chef-solo/raw/master/install.sh | sh
+    wget -nv -O - https://github.com/riywo/ubuntu-chef-solo/raw/master/install.sh | sh
 
 Copypasted from
 ===============
