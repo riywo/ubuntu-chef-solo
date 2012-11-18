@@ -2,7 +2,7 @@
 
 # This runs as root
 
-if ! [ "chef-solo -v > /dev/null" ]; then
+if ! [ $(chef-solo -v > /dev/null) ]; then
     export DEBIAN_FRONTEND=noninteractive
     # Upgrade headlessly (this is only safe-ish on vanilla systems)
     apt-get update &&
