@@ -10,5 +10,5 @@ if ! chef-solo -v > /dev/null 2>&1; then
         --force-yes -fuy dist-upgrade &&
     # Install Ruby and Chef
     apt-get install -y ruby1.9.1 ruby1.9.1-dev make &&
-    sudo gem1.9.1 install --no-rdoc --no-ri chef --version 0.10.0
+    sudo gem1.9.1 install --no-rdoc --no-ri chef
 fi
